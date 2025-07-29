@@ -1,7 +1,7 @@
 project/
 │
 ├── graph_construction.py       # Dynamic graph construction
-├── sthaf_encoder.py            # STHAF Encoder implementation
+├── sthaf_encoder.py            # Encoder implementation
 ├── contrastive_loss.py         # Spatio-temporal contrastive loss
 ├── augmentations.py            # Data augmentation functions
 ├── main.py                     # Training pipeline and execution
