@@ -1,0 +1,30 @@
+project/
+│
+├── graph_construction.py       # Dynamic graph construction
+├── sthaf_encoder.py            # STHAF Encoder implementation
+├── contrastive_loss.py         # Spatio-temporal contrastive loss
+├── augmentations.py            # Data augmentation functions
+├── main.py                     # Training pipeline and execution
+└── requirements.txt            # Dependencies
+
+
+requirements.txt
+
+torch>=2.0.0
+torch-geometric>=2.3.0
+numpy>=1.23.0
+
+Dependencies: Install via pip install -r requirements.txt.
+依赖项：通过pip install -r requirements.txt安装。
+
+Data: Replace the dummy np.random.rand with your real multivariate time-series dataset.
+数据：用真实的多元时间序列数据集替换虚拟的np.random.rand 。
+
+Scalability: The code assumes small-scale data for simplicity; adjust batching and memory handling for larger datasets.
+可扩展性：为了简单起见，代码假设数据规模较小；针对更大的数据集调整批处理和内存处理。
+
+Fine-Tuning: Add a separate script or function in main.py for cross-domain fine-tuning with a classification head if needed.
+微调：如果需要，在main.py中添加单独的脚本或函数，以便使用分类头进行跨域微调。
+
+This modular implementation realizes the full scheme. Run main.py to pre-train model F, and extend as necessary for your specific use case.
+此模块化实现实现了完整方案。运行main.py来预训练模型 F，并根据需要扩展以满足您的特定用例。
